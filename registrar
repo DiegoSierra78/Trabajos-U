@@ -1,0 +1,8 @@
+void registrarPasajero(Pasajero** head, char nombre[], int documento, int destino) {
+    Pasajero* nuevoPasajero = (Pasajero*) malloc(sizeof(Pasajero));
+    strcpy(nuevoPasajero->nombre, nombre);
+    nuevoPasajero->documento = documento;
+    nuevoPasajero->destino = destino;
+    nuevoPasajero->next = *head;
+    *head = nuevoPasajero;
+}
