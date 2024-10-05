@@ -1,0 +1,7 @@
+void mostrarPasajeros(Pasajero* head) {
+    Pasajero* current = head;
+    while (current != NULL) {
+        printf(" Nombre: %s, Documento: %d, Destino: %d\n", current->nombre, current->documento, current->destino);
+        current = current->next;
+    }
+}
